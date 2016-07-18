@@ -1,0 +1,27 @@
+.centeredHeader {
+	text-align:center;
+}
+.pokeDropdown {
+	margin-left : 5em;
+}
+.heldPokemonText {
+	display:block;
+	position:relative;
+	margin-top:2em; /* adjust if necessary */
+	margin-bottom:1em;
+}
+.heldPokemonEntry {
+	margin-left:1em;
+}
+.heldCandiesText {
+	display:block;
+	position:relative;
+	margin-top:2em; /* adjust if necessary */
+	margin-bottom:1em;
+}
+.heldCandiesEntry {
+	margin-left:1em;
+}
+.calculateButton {
+	margin-left:3em;
+}
