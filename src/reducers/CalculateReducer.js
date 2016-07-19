@@ -1,4 +1,4 @@
-import actions from '../actions/Actions';
+import { CALCULATE } from '../actions/Constants';
 import ServerUtil from '../servers/ServerUtil';
 
 const CalculateReducer = (state={
@@ -9,7 +9,7 @@ const CalculateReducer = (state={
 
 	switch(action.type) {
 
-		case actions.CALCULATE : 
+		case CALCULATE : 
 		return ServerUtil.calculate(action);
 		default : 
 		return state;

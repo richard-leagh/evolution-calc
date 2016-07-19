@@ -24,4 +24,14 @@ ServerUtil.calculate = (details) => {
 	};
 };
 
+ServerUtil.getPokemonDetails = () => {
+	return [{
+		name : 'Pidgey'
+	},{
+		name : 'Caterpie'
+	},{
+		name : 'Rattata'
+	}];
+}
+
 export default ServerUtil;

@@ -1,4 +1,4 @@
-import actions from '../actions/Actions';
+import { SELECT_POKEMON } from '../actions/Constants';
 import ServerUtil from '../servers/ServerUtil';
 
 const PokeReducer = (state={
@@ -8,7 +8,7 @@ const PokeReducer = (state={
 
 	switch(action.type) {
 
-		case actions.SELECT_POKEMON : 
+		case SELECT_POKEMON : 
 		return ServerUtil.loadDetails(action.value);
 		default : 
 		return state;

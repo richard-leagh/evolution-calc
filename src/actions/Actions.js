@@ -1,21 +1,21 @@
+import { SELECT_POKEMON , CALCULATE , GET_POKEMON_DETAILS } from './Constants';
+
 const actions = {};
 
-const SELECT_POKEMON = 'SELECT_POKEMON';
-const CALCULATE = 'CALCULATE';
-const GET_POKEMON_DETAILS = 'GET_POKEMON_DETAILS';
-
-actions.SELECT_POKEMON = SELECT_POKEMON;
-actions.CALCULATE = CALCULATE;
+actions.SELECT_POKEMON = (val) => {
+	return {
+		type : SELECT_POKEMON,
+		value : val
+	};
+};
 
 actions.CALCULATE = (pHeld,cHeld,eReq) => {
-
 	return {
 		type : CALCULATE,
 		pokeHeld : pHeld,
 		candyHeld : cHeld,
 		evolutionRequirement : eReq		
 	};
-
 };
 
 actions.GET_POKEMON_DETAILS = () => {

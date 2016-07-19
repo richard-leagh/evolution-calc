@@ -11,12 +11,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 	return {
 		calculate : (pHeld,cHeld,eReq) => {
-			dispatch({
-				type : actions.CALCULATE,
-				pokeHeld : pHeld,
-				candyHeld : cHeld,
-				evolutionRequirement : eReq
-			});
+			dispatch(actions.CALCULATE(pHeld,cHeld,eReq));
 		}
 	};
 }
